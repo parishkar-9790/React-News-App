@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import News from './components/News';
+import NewsItems from './components/NewsItems';
 // function based component
 // function App() {
 //   return (
@@ -27,11 +30,14 @@ import './App.css';
 import React, { Component } from 'react'
 
 export default class App extends Component {
-  c='parishkar'
+  // c='parishkar'
   render() {
     return (
       <div>
-        Hey This is a Class Based Component {this.c}
+        {/* Hey This is a Class Based Component {this.c} */}
+      <NavBar/>
+      <News/>
+
       </div>
     )
   }
