@@ -2,15 +2,14 @@ import React, { Component } from 'react'
 import NewsItems from './NewsItems'
 import myJSON from './sample.json'
 export default class News extends Component {
-
+// news .js is used for forward and back ward andd also laading and unloaing content 
     // articles = []
     constructor() {
         super();
-        console.log('hello i am a constructor');
         this.state = {
             articles: [],
             // articles: myJSON.articles,
-            loading: false,
+            loading: true,
             page: 1
         }
     }
